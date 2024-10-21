@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamma - Apprendre les maths</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Gamma - Apprendre les mathématiques en s'amusant</h1>
+      <nav>
+        <ul>
+          <li><a href="#ensembles">Ensembles de nombres</a></li>
+          <li><a href="#inequations">Inéquations</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="ensembles">
+        <h2>Ensembles de Nombres</h2>
+        <div class="lesson">
+          <p>Bienvenue dans la leçon sur les ensembles de nombres.</p>
+          <button onclick="startLesson('ensembles')">Commencer la leçon</button>
+        </div>
+        <div id="ensembles-exercises" class="exercise hidden">
+          <!-- Les exercices seront générés ici -->
+        </div>
+      </section>
+
+      <section id="inequations">
+        <h2>Inéquations du premier degré</h2>
+        <div class="lesson">
+          <p>Apprenez à résoudre des inéquations du premier degré.</p>
+          <button onclick="startLesson('inequations')">Commencer la leçon</button>
+        </div>
+        <div id="inequations-exercises" class="exercise hidden">
+          <!-- Les exercices seront générés ici -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Gamma - Un projet pour apprendre les mathématiques de manière ludique</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
